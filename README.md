@@ -1,5 +1,16 @@
 # iOS-style immersive gesture bar
 
+# iosbar-immersive
+本仓库为 Fork 衍生项目
+原项目地址：https://github.com/murongruyan/iosbar-immersive
+
+本项目基于原项目二次开发，原项目采用 GPL 许可证。
+因此本仓库所有修改与新增代码，同样遵循 GPL 许可证。
+你可以自由使用、修改、分发本项目代码；分发时必须公开完整源代码，并保留原作者版权声明。
+
+版权归原作者所有，修改部分由本仓库贡献者维护。
+
+
 这是面向 Android 16/realme UI 的 LSPosed + KernelSU 模块。它只向
 `com.android.systemui` 注入 Hook，不替换 framework、SystemUI 或导航模式 RRO，
 因此不会改动显示模块使用的 framework 资源映射。
