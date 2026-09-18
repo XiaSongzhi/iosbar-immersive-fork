@@ -52,6 +52,9 @@ if [ -s "$HOOK_APK" ]; then
   case "$hook_size" in
     ''|*[!0-9]*) ui_print "! Hook APK size unavailable; RRO-only mode" ;;
     *)
+      # v0.4.2 re-signs the hook APK; drop any previously installed package
+      # record first, or pm install fails with INSTALL_FAILED_UPDATE_INCOMPATIBLE.
+      pm uninstall --user 0 com.iosbar.navhook >/dev/null 2>&1 || true
       if cat "$HOOK_APK" | pm install -r -d -S "$hook_size" >/dev/null 2>&1; then
         ui_print "API 102 SystemUI geometry + transient-scrim hook installed"
       else

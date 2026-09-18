@@ -1,5 +1,27 @@
+# Local build and analysis output
+_work/
+work/
+build/
 dist/
-release-notes.md
-src/hook/.gradle/
-src/hook/build/
-src/hook/.kotlin/
+out/
+*.log
+*.tmp
+*.bak
+
+# Reverse-engineering and signing material
+*.smali
+*.dex
+*.keystore
+*.jks
+*.pem
+*.key
+
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Generated flash packages; publish these through GitHub Releases when needed
+*.zip
