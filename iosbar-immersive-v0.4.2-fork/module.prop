@@ -1,7 +1,0 @@
-id=iosbar_immersive
-name=iOS-style immersive gesture bar
-version=0.4.2
-versionCode=9
-author=Codex
-description=Immersive iOS-style gesture bar with a SystemUI-only geometry and transient-scrim hook. v0.4.2: bar bottom offset now reads the native ColorOS 16 dimension so the bar sits at the stock height.
-minMagisk=24000
